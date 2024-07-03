@@ -1,34 +1,41 @@
 body {
   font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
-header {
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-}
-
-main {
+.container {
+  background: white;
   padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
   text-align: center;
 }
 
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 10px 0;
-  position: fixed;
-  width: 100%;
-  bottom: 0;
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label, input, button {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
 }
 
 button {
-  padding: 10px 20px;
-  font-size: 16px;
   cursor: pointer;
+}
+
+#zodiac-result {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
 }
